@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="316" id="KGk-i7-Jjw" customClass="NoAccountCell" customModule="CollectionViewPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="434" height="316"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="434" height="316"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OI7-eo-tBi">
+                        <rect key="frame" x="40" y="31" width="52" height="30"/>
+                        <state key="normal" title="신한은행">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmO-Lq-PI8">
+                        <rect key="frame" x="112" y="31" width="52" height="30"/>
+                        <state key="normal" title="다른은행">
+                            <color key="titleColor" systemColor="labelColor"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0a0-Y4-0ri">
+                        <rect key="frame" x="40" y="81" width="354" height="201"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="계좌 읍다" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Wv-fB-MPo">
+                                <rect key="frame" x="145" y="90" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemTealColor"/>
+                        <constraints>
+                            <constraint firstItem="1Wv-fB-MPo" firstAttribute="centerX" secondItem="0a0-Y4-0ri" secondAttribute="centerX" id="QvM-iy-GVN"/>
+                            <constraint firstAttribute="bottom" secondItem="1Wv-fB-MPo" secondAttribute="bottom" constant="90" id="jvJ-mP-5H9"/>
+                            <constraint firstItem="1Wv-fB-MPo" firstAttribute="top" secondItem="0a0-Y4-0ri" secondAttribute="top" constant="90" id="pcJ-Tr-NMk"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="OI7-eo-tBi" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="20" id="6CO-GZ-ykX"/>
+                    <constraint firstItem="SmO-Lq-PI8" firstAttribute="leading" secondItem="OI7-eo-tBi" secondAttribute="trailing" constant="20" id="BaQ-ig-hbq"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="0a0-Y4-0ri" secondAttribute="bottom" priority="250" constant="20" id="G8s-w0-NQb"/>
+                    <constraint firstItem="OI7-eo-tBi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="Jws-a2-Mse"/>
+                    <constraint firstItem="SmO-Lq-PI8" firstAttribute="centerY" secondItem="OI7-eo-tBi" secondAttribute="centerY" id="QGU-rg-6zF"/>
+                    <constraint firstItem="0a0-Y4-0ri" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="20" id="XXX-OM-be0"/>
+                    <constraint firstItem="0a0-Y4-0ri" firstAttribute="top" secondItem="SmO-Lq-PI8" secondAttribute="bottom" constant="20" id="ZnC-zW-9Ni"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0a0-Y4-0ri" secondAttribute="trailing" constant="20" id="nxb-tZ-VQz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="201.44927536231884" y="244.41964285714283"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

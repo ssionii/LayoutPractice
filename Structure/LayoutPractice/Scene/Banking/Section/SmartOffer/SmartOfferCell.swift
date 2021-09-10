@@ -7,10 +7,12 @@
 
 import UIKit
 
-class SmartOfferCell: MainTableViewCell {
+class SmartOfferCell: UITableViewCell {
 
 	@IBOutlet weak var contentBackgroundView: UIView!
 	@IBOutlet weak var contentLabel: UILabel!
+	
+	private var viewModel: SmartOfferViewModel?
 	
 	override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,12 +23,10 @@ class SmartOfferCell: MainTableViewCell {
 		configureUI()
 	}
 	
-	override func configure(content: MainContent) {
-		if let content = content as? SmartOfferContent {
-			self.contentLabel.text = content.url
-		} else {
-			// TODO: content 없을때 처리
-		}
+	func bind(viewModel: SmartOfferViewModel) {
+		self.viewModel = viewModel
+		
+		contentLabel.text = viewModel.url
 	}
 	
 	private func configureUI() {

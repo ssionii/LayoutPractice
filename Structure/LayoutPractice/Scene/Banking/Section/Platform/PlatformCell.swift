@@ -7,10 +7,12 @@
 
 import UIKit
 
-class PlatformCell: MainTableViewCell {
+class PlatformCell: UITableViewCell {
 
 	@IBOutlet weak var contentBackgroundView: UIView!
 	@IBOutlet weak var contentLabel: UILabel!
+	
+	private var viewModel: PlatformViewModel?
 	
 	override func awakeFromNib() {
         super.awakeFromNib()
@@ -21,12 +23,10 @@ class PlatformCell: MainTableViewCell {
 		configureUI()
 	}
 	
-	override func configure(content: MainContent) {
-		if let content = content as? PlatformContent {
-			self.contentLabel.text = content.text
-		} else {
-			// TODO: content 없을때 처리
-		}
+	func bind(viewModel: PlatformViewModel) {
+		self.viewModel = viewModel
+		
+		contentLabel.text = viewModel.content
 	}
 	
 	private func configureUI() {

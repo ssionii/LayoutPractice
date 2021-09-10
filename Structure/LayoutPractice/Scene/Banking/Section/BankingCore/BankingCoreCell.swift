@@ -7,7 +7,7 @@
 
 import UIKit
 
-class BankingCoreCell: MainTableViewCell {
+class BankingCoreCell: UITableViewCell {
 	
 	@IBOutlet weak var collectionView: UICollectionView!
 	@IBAction func ourBankClicked(_ sender: Any) {
@@ -18,9 +18,7 @@ class BankingCoreCell: MainTableViewCell {
 		isOurBankClicked = false
 	}
 	
-	private var ourBankAccounts: [Account]?
-	private var otherBankAccounts: [Account]?
-	private var displayedAccounts: [Account]? {
+	var displayedAccounts: [Account]? {
 		didSet {
 			collectionView.reloadData()
 		}
@@ -29,14 +27,16 @@ class BankingCoreCell: MainTableViewCell {
 	private var isOurBankClicked: Bool = true {
 		didSet {
 			if isOurBankClicked {
-				displayedAccounts = ourBankAccounts
+				displayedAccounts = viewModel?.ourBankAccounts
 			} else {
-				displayedAccounts = otherBankAccounts
+				displayedAccounts = viewModel?.otherBankAccounts
 			}
 		}
 	}
 	
 	private var cellWidth: CGFloat?
+	
+	private var viewModel: BankingCoreViewModel?
 	
 	override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,17 +46,10 @@ class BankingCoreCell: MainTableViewCell {
 		configureCollectionView()
 	}
 	
-	override func configure(content: MainContent) {
+	func bind(viewModel: BankingCoreViewModel) {
+		self.viewModel = viewModel
 		
-		if let content = content as? BankingCoreContent {
-			self.ourBankAccounts = content.ourBankAccount
-			self.otherBankAccounts = content.otherBankAccount
-			if isOurBankClicked {
-				displayedAccounts = ourBankAccounts
-			} else {
-				displayedAccounts = otherBankAccounts
-			}
-		}
+		displayedAccounts = viewModel.ourBankAccounts
 	}
 
 	private func configureCollectionView() {
@@ -84,6 +77,7 @@ extension BankingCoreCell: UICollectionViewDataSource {
 			  let account = displayedAccounts?[indexPath.row] else {
 			return UICollectionViewCell()
 		}
+		cell.delegate = self
 		cell.configure(account: account)
 		return cell
 	}
@@ -92,5 +86,11 @@ extension BankingCoreCell: UICollectionViewDataSource {
 extension BankingCoreCell: UICollectionViewDelegateFlowLayout {
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return CGSize(width: cellWidth!, height: collectionView.frame.height)
+	}
+}
+
+extension BankingCoreCell: AccountCardCellDelegate {
+	func transferButtonClicked() {
+		self.viewModel?.delegate?.transferButtonClicked()
 	}
 }

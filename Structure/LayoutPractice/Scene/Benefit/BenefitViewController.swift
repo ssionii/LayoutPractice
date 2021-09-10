@@ -42,9 +42,6 @@ class BenefitViewController: UIViewController {
     }
 	
 	private func configureTableView() {
-		for section in viewModel.sections {
-			tableView.register(UINib(nibName: section.cellID, bundle: nil), forCellReuseIdentifier: section.cellID)
-		}
 		
 		tableView.register(UINib(nibName: BenefitHeaderView.reuseIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier: BenefitHeaderView.reuseIdentifier)
 		
@@ -78,14 +75,16 @@ extension BenefitViewController: UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-		let section = viewModel.sections[section]
-		guard let headerViewID = section.headerViewID,
-			  let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerViewID) as? MainHeaderView,
-			  let headerContent = section.headerContent else {
-			return UIView()
-		}
-		headerView.configure(content: headerContent)
-		return headerView
+//		let section = viewModel.sections[section]
+//		guard let headerViewID = section.headerViewID,
+//			  let headerView = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerViewID) as? MainHeaderView,
+//			  let headerContent = section.headerContent else {
+//			return UIView()
+//		}
+//		headerView.configure(content: headerContent)
+//		return headerView
+		
+		return UIView()
 	}
 	
 	func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -93,12 +92,13 @@ extension BenefitViewController: UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-		let section = viewModel.sections[indexPath.section]
-		guard let cell = tableView.dequeueReusableCell(withIdentifier: section.cellID, for: indexPath) as? MainTableViewCell else {
-			return UITableViewCell()
-		}
-		cell.configure(content: section.content)
-		return cell
+//		let section = viewModel.sections[indexPath.section]
+//		guard let cell = tableView.dequeueReusableCell(withIdentifier: section.cellID, for: indexPath) as? MainTableViewCell else {
+//			return UITableViewCell()
+//		}
+//		cell.configure(content: section.content)
+//		return cell
+		return UITableViewCell()
 	}
 	
 	func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {

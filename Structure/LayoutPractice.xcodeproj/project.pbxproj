@@ -7,6 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA09741226E0BDCE0029458A /* BankingSectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA09741126E0BDCE0029458A /* BankingSectionFactory.swift */; };
+		FA443E9326E1A9090031DBC1 /* BankingCoreSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443E9226E1A9090031DBC1 /* BankingCoreSectionController.swift */; };
+		FA443E9C26E1B59E0031DBC1 /* BankingCoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443E9B26E1B59E0031DBC1 /* BankingCoreViewModel.swift */; };
+		FA443EA426E1B6DC0031DBC1 /* MyMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EA326E1B6DC0031DBC1 /* MyMenuViewModel.swift */; };
+		FA443EAC26E1B8B10031DBC1 /* MyMenuSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EAB26E1B8B10031DBC1 /* MyMenuSectionController.swift */; };
+		FA443EBB26E1E1F20031DBC1 /* SubContentSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EBA26E1E1F20031DBC1 /* SubContentSectionViewModel.swift */; };
+		FA443EC026E1E26D0031DBC1 /* SubContentSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EBF26E1E26D0031DBC1 /* SubContentSectionController.swift */; };
+		FA443EC526E1E2AA0031DBC1 /* SmartOfferViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EC426E1E2AA0031DBC1 /* SmartOfferViewModel.swift */; };
+		FA443ECA26E1E2D60031DBC1 /* SmartOfferSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443EC926E1E2D60031DBC1 /* SmartOfferSectionController.swift */; };
+		FA443ECF26E1E3E90031DBC1 /* PlatformSectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443ECE26E1E3E90031DBC1 /* PlatformSectionViewModel.swift */; };
+		FA443ED426E1E5000031DBC1 /* PlatformSectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA443ED326E1E5000031DBC1 /* PlatformSectionController.swift */; };
+		FA46CD4126E9856B0057AC98 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD3F26E9856B0057AC98 /* AssetViewController.swift */; };
+		FA46CD4226E9856B0057AC98 /* AssetViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA46CD4026E9856B0057AC98 /* AssetViewController.xib */; };
+		FA46CD4726E9857F0057AC98 /* AssetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD4626E9857F0057AC98 /* AssetViewModel.swift */; };
+		FA46CD4F26E98A240057AC98 /* AssetCardContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD4D26E98A240057AC98 /* AssetCardContentCell.swift */; };
+		FA46CD5026E98A240057AC98 /* AssetCardContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA46CD4E26E98A240057AC98 /* AssetCardContentCell.xib */; };
+		FA46CD5826E98BA90057AC98 /* AssetSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD5726E98BA90057AC98 /* AssetSection.swift */; };
+		FA46CD6026E98D970057AC98 /* AssetCardSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD5F26E98D970057AC98 /* AssetCardSectionModel.swift */; };
+		FA46CD6826E992210057AC98 /* AssetSectionFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD6726E992210057AC98 /* AssetSectionFactory.swift */; };
+		FA46CD8E26E99C610057AC98 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD8D26E99C610057AC98 /* UITableView+Extension.swift */; };
+		FA46CD9326E99C930057AC98 /* Cell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA46CD9226E99C930057AC98 /* Cell+Extension.swift */; };
+		FA6493C226E72E3F00236038 /* MainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6493C126E72E3F00236038 /* MainSection.swift */; };
+		FA6493D426E7484400236038 /* BenefitHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6493D326E7484400236038 /* BenefitHeaderViewModel.swift */; };
+		FA6493E826E879BE00236038 /* SubContentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6493E726E879BE00236038 /* SubContentHeaderView.swift */; };
+		FA6493FE26E886D100236038 /* SubContentFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6493FD26E886D100236038 /* SubContentFooterView.swift */; };
+		FA80EF9426E9A19100EF53DF /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80EF9326E9A19100EF53DF /* UICollectionView+Extension.swift */; };
+		FA80EF9D26E9C18A00EF53DF /* AssetCardHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80EF9B26E9C18A00EF53DF /* AssetCardHeaderView.swift */; };
+		FA80EF9E26E9C18A00EF53DF /* AssetCardHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA80EF9C26E9C18A00EF53DF /* AssetCardHeaderView.xib */; };
+		FA80EFA426E9D54000EF53DF /* AssetCardFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA80EFA226E9D54000EF53DF /* AssetCardFooterView.swift */; };
+		FA80EFA526E9D54000EF53DF /* AssetCardFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FA80EFA326E9D54000EF53DF /* AssetCardFooterView.xib */; };
 		FA8310ED26D470F8000B1AE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA8310EC26D470F8000B1AE9 /* AppDelegate.swift */; };
 		FA8310F626D470F9000B1AE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA8310F526D470F9000B1AE9 /* Assets.xcassets */; };
 		FA8310F926D470F9000B1AE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA8310F726D470F9000B1AE9 /* LaunchScreen.storyboard */; };
@@ -17,8 +47,6 @@
 		FAC8CF3026DDBD6400C0B0D5 /* AccountCardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CF2E26DDBD6300C0B0D5 /* AccountCardCell.swift */; };
 		FAC8CF3126DDBD6400C0B0D5 /* AccountCardCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAC8CF2F26DDBD6300C0B0D5 /* AccountCardCell.xib */; };
 		FAC8CF4026DDE5BE00C0B0D5 /* BankingContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CF3F26DDE5BE00C0B0D5 /* BankingContent.swift */; };
-		FAC8CF4826DDF09200C0B0D5 /* BankingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CF4726DDF09200C0B0D5 /* BankingSection.swift */; };
-		FAC8CF5626DDFE2E00C0B0D5 /* ReuseableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC8CF5526DDFE2E00C0B0D5 /* ReuseableView.swift */; };
 		FACD62E026DC54B1005AF598 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD62DE26DC54B1005AF598 /* MainViewController.swift */; };
 		FACD62E126DC54B1005AF598 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACD62DF26DC54B1005AF598 /* MainViewController.xib */; };
 		FACD62E826DC54FE005AF598 /* BankingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD62E626DC54FE005AF598 /* BankingViewController.swift */; };
@@ -44,8 +72,11 @@
 		FACD637226DCA1D6005AF598 /* Animator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD637126DCA1D6005AF598 /* Animator.swift */; };
 		FACD637B26DCBA0C005AF598 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FACD637926DCBA0B005AF598 /* MenuCell.swift */; };
 		FACD637C26DCBA0C005AF598 /* MenuCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FACD637A26DCBA0C005AF598 /* MenuCell.xib */; };
+		FAFA6AF026EADA1200C89435 /* ImageTileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA6AEE26EADA1200C89435 /* ImageTileCell.swift */; };
+		FAFA6AF126EADA1200C89435 /* ImageTileCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAFA6AEF26EADA1200C89435 /* ImageTileCell.xib */; };
+		FAFA6AF726EADC5200C89435 /* AssetContentSectionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFA6AF626EADC5200C89435 /* AssetContentSectionModel.swift */; };
 		FAFECCCF26DF0C48004577FD /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFECCCE26DF0C48004577FD /* MainTableViewCell.swift */; };
-		FAFECCD726DF0C63004577FD /* MainSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFECCD626DF0C63004577FD /* MainSection.swift */; };
+		FAFECCD726DF0C63004577FD /* SectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFECCD626DF0C63004577FD /* SectionController.swift */; };
 		FAFECCDF26DF0CAB004577FD /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFECCDE26DF0CAB004577FD /* MainViewModel.swift */; };
 		FAFECCE526DF0D27004577FD /* BenefitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFECCE426DF0D27004577FD /* BenefitViewModel.swift */; };
 		FAFECCEA26DF0D4A004577FD /* BenefitSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFECCE926DF0D4A004577FD /* BenefitSection.swift */; };
@@ -78,6 +109,36 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA09741126E0BDCE0029458A /* BankingSectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingSectionFactory.swift; sourceTree = "<group>"; };
+		FA443E9226E1A9090031DBC1 /* BankingCoreSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingCoreSectionController.swift; sourceTree = "<group>"; };
+		FA443E9B26E1B59E0031DBC1 /* BankingCoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingCoreViewModel.swift; sourceTree = "<group>"; };
+		FA443EA326E1B6DC0031DBC1 /* MyMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuViewModel.swift; sourceTree = "<group>"; };
+		FA443EAB26E1B8B10031DBC1 /* MyMenuSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyMenuSectionController.swift; sourceTree = "<group>"; };
+		FA443EBA26E1E1F20031DBC1 /* SubContentSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentSectionViewModel.swift; sourceTree = "<group>"; };
+		FA443EBF26E1E26D0031DBC1 /* SubContentSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentSectionController.swift; sourceTree = "<group>"; };
+		FA443EC426E1E2AA0031DBC1 /* SmartOfferViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartOfferViewModel.swift; sourceTree = "<group>"; };
+		FA443EC926E1E2D60031DBC1 /* SmartOfferSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartOfferSectionController.swift; sourceTree = "<group>"; };
+		FA443ECE26E1E3E90031DBC1 /* PlatformSectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSectionViewModel.swift; sourceTree = "<group>"; };
+		FA443ED326E1E5000031DBC1 /* PlatformSectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlatformSectionController.swift; sourceTree = "<group>"; };
+		FA46CD3F26E9856B0057AC98 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		FA46CD4026E9856B0057AC98 /* AssetViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetViewController.xib; sourceTree = "<group>"; };
+		FA46CD4626E9857F0057AC98 /* AssetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewModel.swift; sourceTree = "<group>"; };
+		FA46CD4D26E98A240057AC98 /* AssetCardContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardContentCell.swift; sourceTree = "<group>"; };
+		FA46CD4E26E98A240057AC98 /* AssetCardContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetCardContentCell.xib; sourceTree = "<group>"; };
+		FA46CD5726E98BA90057AC98 /* AssetSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSection.swift; sourceTree = "<group>"; };
+		FA46CD5F26E98D970057AC98 /* AssetCardSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardSectionModel.swift; sourceTree = "<group>"; };
+		FA46CD6726E992210057AC98 /* AssetSectionFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetSectionFactory.swift; sourceTree = "<group>"; };
+		FA46CD8D26E99C610057AC98 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		FA46CD9226E99C930057AC98 /* Cell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cell+Extension.swift"; sourceTree = "<group>"; };
+		FA6493C126E72E3F00236038 /* MainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSection.swift; sourceTree = "<group>"; };
+		FA6493D326E7484400236038 /* BenefitHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitHeaderViewModel.swift; sourceTree = "<group>"; };
+		FA6493E726E879BE00236038 /* SubContentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentHeaderView.swift; sourceTree = "<group>"; };
+		FA6493FD26E886D100236038 /* SubContentFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubContentFooterView.swift; sourceTree = "<group>"; };
+		FA80EF9326E9A19100EF53DF /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		FA80EF9B26E9C18A00EF53DF /* AssetCardHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardHeaderView.swift; sourceTree = "<group>"; };
+		FA80EF9C26E9C18A00EF53DF /* AssetCardHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetCardHeaderView.xib; sourceTree = "<group>"; };
+		FA80EFA226E9D54000EF53DF /* AssetCardFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetCardFooterView.swift; sourceTree = "<group>"; };
+		FA80EFA326E9D54000EF53DF /* AssetCardFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AssetCardFooterView.xib; sourceTree = "<group>"; };
 		FA8310E926D470F8000B1AE9 /* LayoutPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LayoutPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA8310EC26D470F8000B1AE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FA8310F526D470F9000B1AE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -94,8 +155,6 @@
 		FAC8CF2E26DDBD6300C0B0D5 /* AccountCardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountCardCell.swift; sourceTree = "<group>"; };
 		FAC8CF2F26DDBD6300C0B0D5 /* AccountCardCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AccountCardCell.xib; sourceTree = "<group>"; };
 		FAC8CF3F26DDE5BE00C0B0D5 /* BankingContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingContent.swift; sourceTree = "<group>"; };
-		FAC8CF4726DDF09200C0B0D5 /* BankingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingSection.swift; sourceTree = "<group>"; };
-		FAC8CF5526DDFE2E00C0B0D5 /* ReuseableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReuseableView.swift; sourceTree = "<group>"; };
 		FACD62DE26DC54B1005AF598 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FACD62DF26DC54B1005AF598 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
 		FACD62E626DC54FE005AF598 /* BankingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BankingViewController.swift; sourceTree = "<group>"; };
@@ -121,8 +180,11 @@
 		FACD637126DCA1D6005AF598 /* Animator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animator.swift; sourceTree = "<group>"; };
 		FACD637926DCBA0B005AF598 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		FACD637A26DCBA0C005AF598 /* MenuCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuCell.xib; sourceTree = "<group>"; };
+		FAFA6AEE26EADA1200C89435 /* ImageTileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTileCell.swift; sourceTree = "<group>"; };
+		FAFA6AEF26EADA1200C89435 /* ImageTileCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTileCell.xib; sourceTree = "<group>"; };
+		FAFA6AF626EADC5200C89435 /* AssetContentSectionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetContentSectionModel.swift; sourceTree = "<group>"; };
 		FAFECCCE26DF0C48004577FD /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
-		FAFECCD626DF0C63004577FD /* MainSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainSection.swift; sourceTree = "<group>"; };
+		FAFECCD626DF0C63004577FD /* SectionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionController.swift; sourceTree = "<group>"; };
 		FAFECCDE26DF0CAB004577FD /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		FAFECCE426DF0D27004577FD /* BenefitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitViewModel.swift; sourceTree = "<group>"; };
 		FAFECCE926DF0D4A004577FD /* BenefitSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BenefitSection.swift; sourceTree = "<group>"; };
@@ -162,6 +224,77 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA443E9A26E1B5740031DBC1 /* AccountCard */ = {
+			isa = PBXGroup;
+			children = (
+				FAC8CF2E26DDBD6300C0B0D5 /* AccountCardCell.swift */,
+				FAC8CF2F26DDBD6300C0B0D5 /* AccountCardCell.xib */,
+			);
+			path = AccountCard;
+			sourceTree = "<group>";
+		};
+		FA443EB926E1E1C40031DBC1 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				FACD637926DCBA0B005AF598 /* MenuCell.swift */,
+				FACD637A26DCBA0C005AF598 /* MenuCell.xib */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		FA443ED826E1E8830031DBC1 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				FA46CD4B26E988870057AC98 /* Section */,
+				FA46CD3F26E9856B0057AC98 /* AssetViewController.swift */,
+				FA46CD4026E9856B0057AC98 /* AssetViewController.xib */,
+				FA46CD4626E9857F0057AC98 /* AssetViewModel.swift */,
+				FA46CD5726E98BA90057AC98 /* AssetSection.swift */,
+				FA46CD6726E992210057AC98 /* AssetSectionFactory.swift */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		FA46CD4B26E988870057AC98 /* Section */ = {
+			isa = PBXGroup;
+			children = (
+				FA80EFAC26E9EE6E00EF53DF /* Content */,
+				FA46CD4C26E988970057AC98 /* AssetCard */,
+			);
+			path = Section;
+			sourceTree = "<group>";
+		};
+		FA46CD4C26E988970057AC98 /* AssetCard */ = {
+			isa = PBXGroup;
+			children = (
+				FA46CD5F26E98D970057AC98 /* AssetCardSectionModel.swift */,
+				FA46CD4D26E98A240057AC98 /* AssetCardContentCell.swift */,
+				FA46CD4E26E98A240057AC98 /* AssetCardContentCell.xib */,
+				FA80EF9B26E9C18A00EF53DF /* AssetCardHeaderView.swift */,
+				FA80EF9C26E9C18A00EF53DF /* AssetCardHeaderView.xib */,
+				FA80EFA226E9D54000EF53DF /* AssetCardFooterView.swift */,
+				FA80EFA326E9D54000EF53DF /* AssetCardFooterView.xib */,
+			);
+			path = AssetCard;
+			sourceTree = "<group>";
+		};
+		FA6493DB26E8798B00236038 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				FA6493E726E879BE00236038 /* SubContentHeaderView.swift */,
+				FA6493FD26E886D100236038 /* SubContentFooterView.swift */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		FA80EFAC26E9EE6E00EF53DF /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA6AF626EADC5200C89435 /* AssetContentSectionModel.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
 		FA8310E026D470F8000B1AE9 = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +370,7 @@
 				FACD638026DCD367005AF598 /* Common */,
 				FACD62DD26DC549C005AF598 /* Main */,
 				FACD62E526DC54ED005AF598 /* Banking */,
+				FA443ED826E1E8830031DBC1 /* Asset */,
 				FACD62F026DC55B1005AF598 /* Benefit */,
 			);
 			path = Scene;
@@ -257,10 +391,11 @@
 			children = (
 				FACD62DE26DC54B1005AF598 /* MainViewController.swift */,
 				FACD62DF26DC54B1005AF598 /* MainViewController.xib */,
-				FAFECCD626DF0C63004577FD /* MainSection.swift */,
 				FAFECCDE26DF0CAB004577FD /* MainViewModel.swift */,
 				FAFECCCE26DF0C48004577FD /* MainTableViewCell.swift */,
 				FAFECD5326DF4671004577FD /* MainHeaderView.swift */,
+				FAFECCD626DF0C63004577FD /* SectionController.swift */,
+				FA6493C126E72E3F00236038 /* MainSection.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -272,7 +407,7 @@
 				FACD62E626DC54FE005AF598 /* BankingViewController.swift */,
 				FACD62E726DC54FE005AF598 /* BankingViewController.xib */,
 				FACD631626DC875B005AF598 /* BankingViewModel.swift */,
-				FAC8CF4726DDF09200C0B0D5 /* BankingSection.swift */,
+				FA09741126E0BDCE0029458A /* BankingSectionFactory.swift */,
 			);
 			path = Banking;
 			sourceTree = "<group>";
@@ -307,7 +442,6 @@
 			children = (
 				FACD637026DCA1C1005AF598 /* Animation */,
 				FACD630E26DC5F7D005AF598 /* SelfSizingTableView.swift */,
-				FAC8CF5526DDFE2E00C0B0D5 /* ReuseableView.swift */,
 			);
 			path = VIew;
 			sourceTree = "<group>";
@@ -315,7 +449,7 @@
 		FACD632526DC96B6005AF598 /* Section */ = {
 			isa = PBXGroup;
 			children = (
-				FACD632626DC96C1005AF598 /* Account */,
+				FACD632626DC96C1005AF598 /* BankingCore */,
 				FACD632826DC96CF005AF598 /* PB */,
 				FACD632726DC96C6005AF598 /* MyMenu */,
 				FACD632926DC96E0005AF598 /* SubContent */,
@@ -325,24 +459,26 @@
 			path = Section;
 			sourceTree = "<group>";
 		};
-		FACD632626DC96C1005AF598 /* Account */ = {
+		FACD632626DC96C1005AF598 /* BankingCore */ = {
 			isa = PBXGroup;
 			children = (
+				FA443E9A26E1B5740031DBC1 /* AccountCard */,
 				FACD632C26DC9731005AF598 /* BankingCoreCell.swift */,
 				FACD632D26DC9731005AF598 /* BankingCoreCell.xib */,
-				FAC8CF2E26DDBD6300C0B0D5 /* AccountCardCell.swift */,
-				FAC8CF2F26DDBD6300C0B0D5 /* AccountCardCell.xib */,
+				FA443E9B26E1B59E0031DBC1 /* BankingCoreViewModel.swift */,
+				FA443E9226E1A9090031DBC1 /* BankingCoreSectionController.swift */,
 			);
-			path = Account;
+			path = BankingCore;
 			sourceTree = "<group>";
 		};
 		FACD632726DC96C6005AF598 /* MyMenu */ = {
 			isa = PBXGroup;
 			children = (
+				FA443EB926E1E1C40031DBC1 /* Menu */,
 				FACD634426DC9CE4005AF598 /* MyMenuCell.swift */,
 				FACD634526DC9CE4005AF598 /* MyMenuCell.xib */,
-				FACD637926DCBA0B005AF598 /* MenuCell.swift */,
-				FACD637A26DCBA0C005AF598 /* MenuCell.xib */,
+				FA443EA326E1B6DC0031DBC1 /* MyMenuViewModel.swift */,
+				FA443EAB26E1B8B10031DBC1 /* MyMenuSectionController.swift */,
 			);
 			path = MyMenu;
 			sourceTree = "<group>";
@@ -359,8 +495,11 @@
 		FACD632926DC96E0005AF598 /* SubContent */ = {
 			isa = PBXGroup;
 			children = (
+				FA6493DB26E8798B00236038 /* HeaderFooter */,
 				FACD634B26DC9D05005AF598 /* SubContentCell.swift */,
 				FACD634C26DC9D05005AF598 /* SubContentCell.xib */,
+				FA443EBA26E1E1F20031DBC1 /* SubContentSectionViewModel.swift */,
+				FA443EBF26E1E26D0031DBC1 /* SubContentSectionController.swift */,
 			);
 			path = SubContent;
 			sourceTree = "<group>";
@@ -370,6 +509,8 @@
 			children = (
 				FACD635226DC9D1C005AF598 /* SmartOfferCell.swift */,
 				FACD635326DC9D1C005AF598 /* SmartOfferCell.xib */,
+				FA443EC426E1E2AA0031DBC1 /* SmartOfferViewModel.swift */,
+				FA443EC926E1E2D60031DBC1 /* SmartOfferSectionController.swift */,
 			);
 			path = SmartOffer;
 			sourceTree = "<group>";
@@ -379,6 +520,8 @@
 			children = (
 				FACD635926DC9D34005AF598 /* PlatformCell.swift */,
 				FACD635A26DC9D34005AF598 /* PlatformCell.xib */,
+				FA443ECE26E1E3E90031DBC1 /* PlatformSectionViewModel.swift */,
+				FA443ED326E1E5000031DBC1 /* PlatformSectionController.swift */,
 			);
 			path = Platform;
 			sourceTree = "<group>";
@@ -386,6 +529,9 @@
 		FACD633626DC97D0005AF598 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FA46CD9226E99C930057AC98 /* Cell+Extension.swift */,
+				FA46CD8D26E99C610057AC98 /* UITableView+Extension.swift */,
+				FA80EF9326E9A19100EF53DF /* UICollectionView+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -409,9 +555,19 @@
 		FACD638026DCD367005AF598 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				FAFA6AF526EADB9A00C89435 /* Cell */,
 				FAC8CF2326DDA9E400C0B0D5 /* Values.swift */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		FAFA6AF526EADB9A00C89435 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FAFA6AEE26EADA1200C89435 /* ImageTileCell.swift */,
+				FAFA6AEF26EADA1200C89435 /* ImageTileCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 		FAFECD0F26DF141C004577FD /* HorizontalScrollableCell */ = {
@@ -437,6 +593,7 @@
 			children = (
 				FAFECD5C26DF4FC5004577FD /* BenefitHeaderView.swift */,
 				FAFECD6426DF4FE0004577FD /* BenefitHeaderView.xib */,
+				FA6493D326E7484400236038 /* BenefitHeaderViewModel.swift */,
 			);
 			path = BenefitHeaderView;
 			sourceTree = "<group>";
@@ -550,14 +707,19 @@
 				FA8310F926D470F9000B1AE9 /* LaunchScreen.storyboard in Resources */,
 				FACD62E126DC54B1005AF598 /* MainViewController.xib in Resources */,
 				FA8310F626D470F9000B1AE9 /* Assets.xcassets in Resources */,
+				FA46CD5026E98A240057AC98 /* AssetCardContentCell.xib in Resources */,
 				FACD637C26DCBA0C005AF598 /* MenuCell.xib in Resources */,
 				FAFECD6526DF4FE0004577FD /* BenefitHeaderView.xib in Resources */,
+				FAFA6AF126EADA1200C89435 /* ImageTileCell.xib in Resources */,
 				FACD635526DC9D1C005AF598 /* SmartOfferCell.xib in Resources */,
 				FACD634726DC9CE4005AF598 /* MyMenuCell.xib in Resources */,
 				FAFECD3126DF1B68004577FD /* HorizontalScrollableCell.xib in Resources */,
 				FAFECD2126DF14D4004577FD /* SubscriptionCollectionViewCell.xib in Resources */,
 				FACD636326DC9E36005AF598 /* PBCell.xib in Resources */,
+				FA80EF9E26E9C18A00EF53DF /* AssetCardHeaderView.xib in Resources */,
 				FACD62E926DC54FE005AF598 /* BankingViewController.xib in Resources */,
+				FA80EFA526E9D54000EF53DF /* AssetCardFooterView.xib in Resources */,
+				FA46CD4226E9856B0057AC98 /* AssetViewController.xib in Resources */,
 				FACD632F26DC9731005AF598 /* BankingCoreCell.xib in Resources */,
 				FAC8CF3126DDBD6400C0B0D5 /* AccountCardCell.xib in Resources */,
 			);
@@ -585,38 +747,64 @@
 			buildActionMask = 2147483647;
 			files = (
 				FACD636226DC9E36005AF598 /* PBCell.swift in Sources */,
+				FA80EF9426E9A19100EF53DF /* UICollectionView+Extension.swift in Sources */,
 				FACD635426DC9D1C005AF598 /* SmartOfferCell.swift in Sources */,
 				FACD637226DCA1D6005AF598 /* Animator.swift in Sources */,
+				FA443E9326E1A9090031DBC1 /* BankingCoreSectionController.swift in Sources */,
 				FAFECCCF26DF0C48004577FD /* MainTableViewCell.swift in Sources */,
 				FAFECD2026DF14D4004577FD /* SubscriptionCollectionViewCell.swift in Sources */,
+				FA80EFA426E9D54000EF53DF /* AssetCardFooterView.swift in Sources */,
+				FA6493E826E879BE00236038 /* SubContentHeaderView.swift in Sources */,
 				FACD635B26DC9D34005AF598 /* PlatformCell.swift in Sources */,
+				FA443ECF26E1E3E90031DBC1 /* PlatformSectionViewModel.swift in Sources */,
 				FAFECD5426DF4671004577FD /* MainHeaderView.swift in Sources */,
 				FAFECCDF26DF0CAB004577FD /* MainViewModel.swift in Sources */,
 				FA8310ED26D470F8000B1AE9 /* AppDelegate.swift in Sources */,
 				FACD637B26DCBA0C005AF598 /* MenuCell.swift in Sources */,
+				FA46CD9326E99C930057AC98 /* Cell+Extension.swift in Sources */,
 				FAC8CF2426DDA9E400C0B0D5 /* Values.swift in Sources */,
+				FA443E9C26E1B59E0031DBC1 /* BankingCoreViewModel.swift in Sources */,
 				FACD632E26DC9731005AF598 /* BankingCoreCell.swift in Sources */,
+				FAFA6AF726EADC5200C89435 /* AssetContentSectionModel.swift in Sources */,
+				FA80EF9D26E9C18A00EF53DF /* AssetCardHeaderView.swift in Sources */,
 				FAC8CF4026DDE5BE00C0B0D5 /* BankingContent.swift in Sources */,
 				FAFECD5D26DF4FC5004577FD /* BenefitHeaderView.swift in Sources */,
-				FAC8CF5626DDFE2E00C0B0D5 /* ReuseableView.swift in Sources */,
+				FA46CD4126E9856B0057AC98 /* AssetViewController.swift in Sources */,
+				FA09741226E0BDCE0029458A /* BankingSectionFactory.swift in Sources */,
+				FA46CD6826E992210057AC98 /* AssetSectionFactory.swift in Sources */,
+				FA6493D426E7484400236038 /* BenefitHeaderViewModel.swift in Sources */,
 				FA859CFC26D5DB190008E115 /* SwiftCommon.swift in Sources */,
+				FA443EC026E1E26D0031DBC1 /* SubContentSectionController.swift in Sources */,
 				FACD62F326DC55EE005AF598 /* BenefitViewController.swift in Sources */,
-				FAFECCD726DF0C63004577FD /* MainSection.swift in Sources */,
+				FA443ED426E1E5000031DBC1 /* PlatformSectionController.swift in Sources */,
+				FAFECCD726DF0C63004577FD /* SectionController.swift in Sources */,
+				FA46CD4726E9857F0057AC98 /* AssetViewModel.swift in Sources */,
 				FACD630F26DC5F7D005AF598 /* SelfSizingTableView.swift in Sources */,
+				FA46CD5826E98BA90057AC98 /* AssetSection.swift in Sources */,
+				FA443ECA26E1E2D60031DBC1 /* SmartOfferSectionController.swift in Sources */,
 				FACD634D26DC9D05005AF598 /* SubContentCell.swift in Sources */,
 				FACD634626DC9CE4005AF598 /* MyMenuCell.swift in Sources */,
+				FA443EAC26E1B8B10031DBC1 /* MyMenuSectionController.swift in Sources */,
 				FACD62E826DC54FE005AF598 /* BankingViewController.swift in Sources */,
 				FAFECCEA26DF0D4A004577FD /* BenefitSection.swift in Sources */,
 				FACD631C26DC88CF005AF598 /* Dynamic.swift in Sources */,
 				FACD62E026DC54B1005AF598 /* MainViewController.swift in Sources */,
 				FACD631726DC875B005AF598 /* BankingViewModel.swift in Sources */,
+				FA6493FE26E886D100236038 /* SubContentFooterView.swift in Sources */,
+				FA46CD6026E98D970057AC98 /* AssetCardSectionModel.swift in Sources */,
+				FA6493C226E72E3F00236038 /* MainSection.swift in Sources */,
 				FAFECD3026DF1B68004577FD /* HorizontalScrollableCell.swift in Sources */,
+				FA443EA426E1B6DC0031DBC1 /* MyMenuViewModel.swift in Sources */,
+				FA443EC526E1E2AA0031DBC1 /* SmartOfferViewModel.swift in Sources */,
+				FA46CD8E26E99C610057AC98 /* UITableView+Extension.swift in Sources */,
 				FAFECCFF26DF10BB004577FD /* BenefitContent.swift in Sources */,
+				FA46CD4F26E98A240057AC98 /* AssetCardContentCell.swift in Sources */,
+				FA443EBB26E1E1F20031DBC1 /* SubContentSectionViewModel.swift in Sources */,
 				FAFECCE526DF0D27004577FD /* BenefitViewModel.swift in Sources */,
 				FACD636926DCA099005AF598 /* AnimationFactory.swift in Sources */,
-				FAC8CF4826DDF09200C0B0D5 /* BankingSection.swift in Sources */,
 				FAFECD4C26DF45AF004577FD /* MainContent.swift in Sources */,
 				FAC8CF3026DDBD6400C0B0D5 /* AccountCardCell.swift in Sources */,
+				FAFA6AF026EADA1200C89435 /* ImageTileCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

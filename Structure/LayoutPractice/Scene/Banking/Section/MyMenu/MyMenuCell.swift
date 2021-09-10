@@ -7,14 +7,14 @@
 
 import UIKit
 
-class MyMenuCell: MainTableViewCell {
+class MyMenuCell: UITableViewCell {
 	
 	@IBOutlet weak var contentBackgroundView: UIView!
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var collectionView: UICollectionView!
 	
-	private var myMenus: [MyMenu]?
-
+	private var viewModel: MyMenuViewModel?
+	
 	override func awakeFromNib() {
 		super.awakeFromNib()
 	}
@@ -24,12 +24,8 @@ class MyMenuCell: MainTableViewCell {
 		self.configureCollectionView()
 	}
 	
-	override func configure(content: MainContent) {
-		if let content = content as? MyMenuContent {
-			self.myMenus = content.myMenus
-		} else {
-			// TODO: 맞춤 메뉴 없을 때 처리
-		}
+	func bind(viewModel: MyMenuViewModel) {
+		self.viewModel = viewModel
 	}
 	
 	private func configureUI() {
@@ -54,12 +50,12 @@ class MyMenuCell: MainTableViewCell {
 extension MyMenuCell: UICollectionViewDelegate,  UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
 	
 	func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-		return myMenus?.count ?? 0 
+		return viewModel?.myMenus.count ?? 0
 	}
 	
 	func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 		let cell = collectionView.dequeueReusableCell(withReuseIdentifier: MenuCell.ID, for: indexPath) as! MenuCell
-		guard let myMenu = self.myMenus?[indexPath.row] else { return cell }
+		guard let myMenu = self.viewModel?.myMenus[indexPath.row] else { return cell }
 		cell.bind(text: myMenu.text, color: myMenu.color)
 		return cell
 	}
@@ -67,5 +63,8 @@ extension MyMenuCell: UICollectionViewDelegate,  UICollectionViewDataSource, UIC
 	func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
 		return CGSize(width: 80, height: self.collectionView.frame.height)
 	}
+	
+	func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+		self.viewModel?.delegate?.clickMenu(viewModel?.myMenus[indexPath.row].text ?? "")
+	}
 }
-

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HorizontalScrollableCell: MainTableViewCell {
+class HorizontalScrollableCell: UITableViewCell {
 
 	@IBOutlet weak var collectionView: UICollectionView!
 	
@@ -23,12 +23,6 @@ class HorizontalScrollableCell: MainTableViewCell {
 	
 	override func layoutSubviews() {
 		configureCollectionView()
-	}
-
-	override func configure(content: MainContent) {
-		if let content = content as? HorizontalScrollableCell {
-			self.contents = content.contents
-		}
 	}
 	
 	private func configureCollectionView() {

@@ -9,3 +9,4 @@ import Foundation
 import UIKit
 
 let horizontalMarginInMain: CGFloat = 20
+var screenWidth: CGFloat = 0

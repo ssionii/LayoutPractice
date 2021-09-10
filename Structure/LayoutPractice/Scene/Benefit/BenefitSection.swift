@@ -8,7 +8,8 @@
 import Foundation
 import UIKit
 
-protocol BenefitSection: MainSection {
+protocol BenefitSection {
+
 	var headerContent: MainHeaderContent? { get }
 }
 

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="U6b-Vx-4bR" customClass="AssetCardFooterView" customModule="LayoutPractice" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fk9-27-ddl">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PNa-vN-qnj">
+                            <rect key="frame" x="139" y="14.5" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aWM-EZ-bhQ">
+                            <rect key="frame" x="280" y="10" width="30" height="30"/>
+                            <state key="normal" title="접기"/>
+                            <connections>
+                                <action selector="foldButtonClicked:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="6Wh-hW-fLu"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="PNa-vN-qnj" firstAttribute="centerY" secondItem="fk9-27-ddl" secondAttribute="centerY" id="Rle-4x-645"/>
+                        <constraint firstAttribute="trailing" secondItem="aWM-EZ-bhQ" secondAttribute="trailing" constant="10" id="ZLF-s7-khk"/>
+                        <constraint firstItem="aWM-EZ-bhQ" firstAttribute="centerY" secondItem="fk9-27-ddl" secondAttribute="centerY" id="cSo-8X-uri"/>
+                        <constraint firstItem="PNa-vN-qnj" firstAttribute="centerX" secondItem="fk9-27-ddl" secondAttribute="centerX" id="fec-cE-Q0u"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="fk9-27-ddl" secondAttribute="bottom" id="9jq-G8-suh"/>
+                <constraint firstItem="fk9-27-ddl" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="g6v-aq-wYq"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="fk9-27-ddl" secondAttribute="trailing" id="gHm-Ba-Zht"/>
+                <constraint firstItem="fk9-27-ddl" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="zJf-Hp-FyP"/>
+            </constraints>
+            <connections>
+                <outlet property="contentBackgroundView" destination="fk9-27-ddl" id="10D-eB-fzl"/>
+                <outlet property="titleLabel" destination="PNa-vN-qnj" id="bp2-fO-AOj"/>
+            </connections>
+            <point key="canvasLocation" x="132" y="131"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -2,25 +2,66 @@
 //  MainSection.swift
 //  LayoutPractice
 //
-//  Created by Yang Siyeon on 2021/09/01.
+//  Created by Yang Siyeon on 2021/09/07.
 //
 
 import Foundation
-import UIKit
 
-protocol MainSection {
-	var cellID: String { get }
-	var content: MainContent { get }
-	var headerViewID: String? { get }
-	var footerViewID: String? { get }
+enum MainSectionType {
+	case BankingCore
+	case MyMenu
+	case BankingSubContent
+	case SmartOffer
+	case BankingPlatform
 }
 
-extension MainSection {
-	var headerViewID: String? {
-		return nil
-	}
+protocol MainSectionable {
+	var type: MainSectionType { get }
+	var sectionViewModel: SectionViewModel { get }
+}
+
+struct BankingCoreSection: MainSectionable {
+	var type: MainSectionType = .BankingCore
+	var sectionViewModel: SectionViewModel
 	
-	var footerViewID: String? {
-		return nil
+	init(viewModel: BankingCoreSectionViewModel) {
+		self.sectionViewModel = viewModel
 	}
 }
+
+struct MyMenuSection: MainSectionable {
+	var type: MainSectionType = .MyMenu
+	var sectionViewModel: SectionViewModel
+	
+	init(viewModel: MyMenuSectionViewModel) {
+		self.sectionViewModel = viewModel
+	}
+}
+
+struct BankingSubContentSection: MainSectionable {
+	var type: MainSectionType = .BankingSubContent
+	var sectionViewModel: SectionViewModel
+	
+	init(viewModel: SubContentSectionViewModel) {
+		self.sectionViewModel = viewModel
+	}
+}
+
+struct SmartOfferSection: MainSectionable {
+	var type: MainSectionType = .SmartOffer
+	var sectionViewModel: SectionViewModel
+	
+	init(viewModel: SmartOfferSectionViewModel) {
+		self.sectionViewModel = viewModel
+	}
+}
+
+struct BankingPlatformSection: MainSectionable {
+	var type: MainSectionType = .BankingPlatform
+	var sectionViewModel: SectionViewModel
+	
+	init(viewModel: PlatformSectionViewModel) {
+		self.sectionViewModel = viewModel
+	}
+}
+

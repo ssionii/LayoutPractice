@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SubContentCell: MainTableViewCell {
+class SubContentCell: UITableViewCell {
 
 	@IBOutlet weak var contentBackgroundView: UIView!
 	@IBOutlet weak var contentLabel: UILabel!
@@ -20,12 +20,8 @@ class SubContentCell: MainTableViewCell {
 		configureUI()
 	}
 	
-	override func configure(content: MainContent) {
-		if let content = content as? SubContent {
-			self.contentLabel.text = content.text
-		} else {
-			// TODO: Content 없을 때 처리
-		}
+	func bind(content: String) {
+		contentLabel.text = content
 	}
 	
 	private func configureUI() {

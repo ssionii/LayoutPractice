@@ -7,12 +7,22 @@
 
 import UIKit
 
+protocol AccountCardCellDelegate: class {
+	func transferButtonClicked()
+}
+
 class AccountCardCell: UICollectionViewCell {
 
 	@IBOutlet weak var accountNameLabel: UILabel!
 	@IBOutlet weak var accountNumberLabel: UILabel!
 	@IBOutlet weak var balanceLabel: UILabel!
 	@IBOutlet weak var contentBackgroundView: UIView!
+	
+	@IBAction func accountButtonClicked(_ sender: Any) {
+		delegate?.transferButtonClicked()
+	}
+	
+	weak var delegate: AccountCardCellDelegate?
 	
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,9 +32,6 @@ class AccountCardCell: UICollectionViewCell {
 		accountNameLabel.text = account.name
 		accountNumberLabel.text = account.accountNumber
 		balanceLabel.text = account.balance
-		
-		print("contentView height: \(contentView.frame.height)")
-		print("backgroundview height: \(contentBackgroundView.frame.height)")
 	}
 	
 }

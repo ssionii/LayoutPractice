@@ -7,20 +7,24 @@
 
 import UIKit
 
-class BenefitHeaderView: MainHeaderView {
+class BenefitHeaderView: UITableViewHeaderFooterView {
 
 	@IBOutlet weak var titleLabel: UILabel!
 	@IBOutlet weak var contentBackgroundView: UIView!
+	
+	private var viewModel: BenefitHeaderViewModel?
 	
 	override func layoutSubviews() {
 		contentBackgroundView.backgroundColor = .yellow
 	}
 	
-	override func configure(content: MainHeaderContent) {
-		if let content = content as? BenefitHeaderContent {
-			self.titleLabel.text = content.text
-		} else {
-			
-		}
+	func configure(viewModel: BenefitHeaderViewModel){
+		self.viewModel = viewModel
+		
+		bind()
+	}
+	
+	private func bind() {
+		titleLabel.text = viewModel?.title
 	}
 }

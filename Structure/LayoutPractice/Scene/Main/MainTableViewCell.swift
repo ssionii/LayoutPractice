@@ -8,8 +8,6 @@
 import Foundation
 import UIKit
 
-class MainTableViewCell: UITableViewCell {
-	func configure(content: MainContent) {
-		print("configure 함수 override 필요: \(content.self)")
-	}
+class MainTableViewCell<ViewModel: SectionViewModel>: UITableViewCell {
+	func bind(viewModel: ViewModel) { }
 }

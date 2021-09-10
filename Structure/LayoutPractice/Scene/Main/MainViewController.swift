@@ -11,6 +11,8 @@ class MainViewController: UITabBarController {
 
 	init() {
 		super.init(nibName: "MainViewController", bundle: nil)
+		
+		screenWidth = self.view.frame.width
 	}
 	
     override func viewDidLoad() {
@@ -27,9 +29,10 @@ class MainViewController: UITabBarController {
 	private func configureTabController() {
 		
 		let bankingVC = BankingViewController()
+		let assetVC = AssetViewController()
 		let benefitVC = BenefitViewController()
 		
-		self.viewControllers = [bankingVC, benefitVC]
+		self.viewControllers = [bankingVC, assetVC, benefitVC]
 	}
 	
 	required init?(coder: NSCoder) {
